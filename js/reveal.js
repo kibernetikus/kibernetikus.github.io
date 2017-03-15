@@ -6,7 +6,17 @@
 				document.body.classList.remove('loading');
 
 				//************************ Example 1 - reveal on load ********************************
-				
+					var rev0 = new RevealFx(document.querySelector('#rev-0'), {
+					revealSettings : {
+						bgcolor: '#7f40f1',
+						onCover: function(contentEl, revealerEl) {
+							contentEl.style.opacity = 1;
+						}
+					}
+				});
+				rev0.reveal();
+
+
 				var rev1 = new RevealFx(document.querySelector('#rev-1'), {
 					revealSettings : {
 						bgcolor: '#7f40f1',
