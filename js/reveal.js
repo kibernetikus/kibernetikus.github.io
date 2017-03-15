@@ -17,6 +17,16 @@
 				});
 				rev1.reveal();
 
+				var rev1_2 = new RevealFx(document.querySelector('#rev-1_2'), {
+					revealSettings : {
+						bgcolor: '#7f40f1',
+						onCover: function(contentEl, revealerEl) {
+							contentEl.style.opacity = 1;
+						}
+					}
+				});
+				rev1_2.reveal();
+
 				var rev2 = new RevealFx(document.querySelector('#rev-2'), {
 					revealSettings : {
 						bgcolor: '#fcf652',
