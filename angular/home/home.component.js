@@ -28,14 +28,7 @@ module('home')
 
 
                 $scope.gotoElement = function(eID) {
-                    var scrollNavParent = document.querySelector('.scrollNav-submenu');
-                    var scrollNav = document.querySelector('#scrollNav');
-                    var menuScroll = document.querySelector('#scrollNav-menu');
-                    if (scrollNavParent.classList.contains('home-menu__open')) {
-                        scrollNavParent.classList.remove('home-menu__open');
-                        scrollNav.classList.remove('nav-icon__open');
-                        menuScroll.classList.remove('nav--show');
-                    }
+               
                     // set the location.hash to the id of
                     // the element you wish to scroll to.
 
